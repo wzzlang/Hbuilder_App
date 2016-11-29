@@ -1,4 +1,4 @@
-# Hbuilder_App这是j
+# Hbuilder_App
 这个是基于Hbuilder开发工具开发的手机APP应用。
 主要功能：
 1.文件上传下载功能
