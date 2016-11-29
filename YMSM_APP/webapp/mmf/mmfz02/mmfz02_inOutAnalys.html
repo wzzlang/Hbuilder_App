@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户分析</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="../../../css/common.css"/>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title">进出库分析</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="common-table-view" style="padding: 0px 0px;">
+				<li class="com-retrieve-content" align="center">
+				 	<div class="com-segmented-pad">
+						<div id="processPeriodType" class="mui-segmented-control com-segmented-control">
+							<a id="dailyTab" class="mui-control-item mui-active">
+								本日
+							</a>
+							<a id="weeklyTab" class="mui-control-item">
+								本周
+							</a>
+							<a id="monthlyTab" class="mui-control-item">
+								本月
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div id="dailyTabTarget">
+				<div>
+					<table>
+						<tr>
+							<td class="com-table-txt-left" style="color: #F14E41;">
+								入<br/>库
+							</td>
+							<td style="border-bottom: 0px;">
+								<div id="dailyRecvContainer" class="in-out-bar-area"></div>
+							</td>
+						</tr>
+					</table >
+				</div>
+				<div style="margin-bottom: 8px;">
+					<table>
+						<tr>
+							<td class="com-table-txt-left" style="color: #008000;">
+								出<br/>库
+							</td>
+							<td style="border-bottom: 0px;">
+								<div id="dailyShipContainer" class="in-out-bar-area"></div>
+							</td>
+						</tr>
+					</table >
+				</div>
+				<div id="dailyLineContainer" class="in-out-line-area"></div>
+			</div>
+			
+			<div id="weeklyTabTarget" class="hidden">
+				<div>
+					<table>
+						<tr>
+							<td class="com-table-txt-left" style="color: #F14E41;">
+								入<br/>库
+							</td>
+							<td style="border-bottom: 0px;">
+								<div id="weeklyRecvContainer" class="in-out-bar-area"></div>
+							</td>
+						</tr>
+					</table >
+				</div>
+				<div style="margin-bottom: 8px;">
+					<table>
+						<tr>
+							<td class="com-table-txt-left" style="color: #008000;">
+								出<br/>库
+							</td>
+							<td style="border-bottom: 0px;">
+								<div id="weeklyShipContainer" class="in-out-bar-area"></div>
+							</td>
+						</tr>
+					</table >
+				</div>
+				<div id="weeklyLineContainer" class="in-out-line-area"></div>
+			</div>
+			
+			<div id="monthlyTabTarget" class="hidden">
+				<div>
+					<table>
+						<tr>
+							<td class="com-table-txt-left" style="color: #F14E41;">
+								入<br/>库
+							</td>
+							<td style="border-bottom: 0px;">
+								<div id="monthlyRecvContainer" class="in-out-bar-area"></div>
+							</td>
+						</tr>
+					</table >
+				</div>
+				<div style="margin-bottom: 8px;">
+					<table>
+						<tr>
+							<td class="com-table-txt-left" style="color: #008000;">
+								出<br/>库
+							</td>
+							<td style="border-bottom: 0px;">
+								<div id="monthlyShipContainer" class="in-out-bar-area"></div>
+							</td>
+						</tr>
+					</table >
+				</div>
+				<div id="monthlyLineContainer" class="in-out-line-area"></div>
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/jquery.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script src="mmfz02_inOutAnalys.js"></script>
+		<script type="text/javascript" src="../../../js/highcharts.js"></script>
+		<script type="text/javascript" src="../../../js/highcharts-3d.js"></script>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/iconfont.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<script src="../../../js/mui.min.js"></script>
+		<style>
+			.mui-popover {
+				height: 80%;
+				width: 98%;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">入库</h1>
+		</header>
+		<div class="mui-content common-table-view" style="padding-bottom: 30px">
+			<div class="mui-content-padded" align="center" style="padding-top:30px">
+				<span id="scanBarcodeIcon" class="scan-barcode"></span>
+			</div>
+			<div id="scanResult" class="mui-content-padded">
+				<ul id="barcodeList" class="barcodeList" style="text-align:left;">
+				</ul>
+			</div>
+			<div id="footTotal" class="mui-content-padded" style="display: none;">
+				<table>
+					<tr>
+						<td style="border-bottom: 0px; text-align: left;" class="common-font">
+							合计:<span id="recordCount">0</span>
+						</td>
+						<td style="border-bottom: 0px; text-align: right;">
+							<a id='cleanAll'>清空全部</a>
+						</td>
+					</tr>
+				</table >
+			</div>
+		</div>
+		<div class="common-btn-padded" style="padding:20px 0px">
+			<a id='submitBtn' type="button" href="#frameInfoContain" class="mui-btn common-btn-block common-btn-retrieve">提交</a>
+		</div>
+		
+		<div id="frameInfoContain" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+				<div id="frameInfoDetail" class="mui-scroll">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/barcode.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="mmfa01_receivement.js" ></script>
+	</body>
+</html>

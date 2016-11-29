@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<link rel="stylesheet" href="../../../css/common.css">
+		<style>
+			.mui-navigate-right:after{
+				right: 0;
+				content:'\e583';
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<ul class="common-table-view">
+				<li class="mui-table-view-cell com-setting-account-view" style="background-color:#FFFFFF;">
+					<span>账号</span>
+					<span id="accountCd" style="float: right;"></span>
+				</li>
+			</ul>
+			<ul class="common-table-view" style="margin-top: 10px;">
+				<li class="com-setting-view">
+				 	<a style="color: #000000;">
+						设置
+					</a>
+				</li>
+	         	<li class="mui-table-view-cell com-setting-sub-view">
+					<a id="retrieveHabit" class="mui-navigate-right" style="margin: 0 20px; padding: 11px 0; border-bottom: 1px solid #E8EAEB; background-color: #FFFFFF;margin-top: -11px;">
+						查询偏好选择
+					</a>
+					<a id="changePassword" class="mui-navigate-right" style="margin: 0 20px; padding: 11px 0; border-bottom: 1px solid #E8EAEB; background-color: #FFFFFF;">
+						密码变更
+					</a>
+				</li>
+			</ul>
+			<ul class="common-table-view" style="margin-top: 10px;">
+				<li class="com-setting-view">
+				 	<a style="color: #000000;">
+						其他
+					</a>
+				</li>
+	         	<li id="aboutSystem" class="mui-table-view-cell com-setting-sub-view">
+					<a  class="mui-navigate-right" style="margin: 0 20px; padding: 11px 0; border-bottom: 1px solid #E8EAEB;background-color: #FFFFFF;margin-top: -11px;">
+						关于系统
+					</a>
+				</li>
+			</ul>
+			<div class="common-btn-padded" style="margin-top: 60px;">
+				<button id='logOut' class="mui-btn common-btn-block common-btn-retrieve">退出登录</button>
+			</div>
+		</div>
+		</style>
+	</body>
+	<script src="../../../js/mui.min.js"></script>
+	<script src="../../../js/common.js"></script>
+	<script src="setting.js"></script>
+</html>

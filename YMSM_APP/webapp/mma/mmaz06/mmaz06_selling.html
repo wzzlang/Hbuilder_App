@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户分析</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="../../../css/common.css"/>
+		
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title">畅销车</h1>
+		</header>
+		
+		<div class="mui-content">
+			<ul class="common-table-view">
+				 <li style="padding: 8px 15px;">
+				 	<b class="area-context">区域:<span id="areaNm"></span></b>
+				 	<b class="area-context">&nbsp;&nbsp;<span id="modelCategoryNm"></span></b>
+				 	<b class="area-context">&nbsp;&nbsp;<span id="modelClassNm"></span></b>
+		         </li>
+				 <li style="padding: 8px 15px;">
+				 	<b class="area-context"><span id="period"></span></b>
+		         </li>
+			</ul>
+			<div id="sellingBarChart" style="min-width:100%;height:100%"></div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/jquery.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/highcharts.js"></script>
+		<script type="text/javascript" src="../../../js/exporting.js"></script>
+		<script src="mmaz06_selling.js"></script>
+	</body>
+</html>

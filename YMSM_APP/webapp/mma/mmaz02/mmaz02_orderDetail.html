@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../../css/common.css" rel="stylesheet" />
+		<script type="text/javascript" src="../../../js/mui.min.js" ></script>
+		<style>
+			.mui-badge-red {
+				color: #fff;
+				background-color: #E02E22;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				font-size: 15px;
+			}
+			.mui-table-view-cell.mui-active {
+				color: #F00A0A;
+				background: #FFE4E1;
+			}
+		</style>
+	</head>
+	<body id="qbody">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title">订单情况</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="common-table-view">
+				 <li style="padding: 8px 15px;">
+				 	<b class="area-context"><span id="period"></span></b>
+		         </li>
+				 <li style="padding: 8px 15px;">
+				 	<b class="area-context">总订单：<span id="totalOrderQty"></span></b>
+		         </li>
+			</ul>
+			<div id="salesOrderInfo">
+			</div>
+		</div>
+		<script type="text/javascript" src="mmaz02_orderDetail.js" ></script>
+		<script type="text/javascript" src="../../../js/common.js" ></script>
+		<script type="text/javascript" src="../../../js/jquery.js" ></script>
+	</body >
+</html>

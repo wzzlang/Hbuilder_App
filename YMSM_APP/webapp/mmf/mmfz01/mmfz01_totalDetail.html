@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title></title>
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../../css/common.css"  rel="stylesheet" />
+		<link href="../../../css/iconfont.css"  rel="stylesheet" />
+		<style>
+			.mui-table-view-cell:after{
+				height: 0;
+			}
+			.mui-table-view-divider:after{
+				height: 0;
+			}
+		</style>
+	</head>
+ 
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">进出库查询</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="common-table-view">
+				 <li style="padding: 8px 15px;">
+				 	<b class="area-context"><span id="period"></span></b>
+		         </li>
+			</ul>
+			<ul class="common-table-view">
+				<table id="inOutTotal" class="common-table-view zebra"> 
+				</table>
+			</ul>
+		</div>
+		<script src="../../../js/jquery.js"></script>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script src="mmfz01_totalDetail.js"></script>
+	</body>
+</html>

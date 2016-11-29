@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<link rel="stylesheet" href="../../../css/common.css">
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">查询偏好设置</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="common-table-view" style="margin-top: 10px;">
+				<li class="com-setting-view" style="padding-left: 10px;">
+				 	<a style="color: #000000;font-weight: 700;">
+						机型
+					</a>
+				</li>
+				<div style="margin: auto 20px;padding-bottom: 10px;">
+					<li class="com-setting-view" style="padding: 10px;">
+						<span>名称显示</span>
+						<div id="modelNmDispSwitch" class="mui-switch mui-switch-mini" style="float: right;">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+					<li class="com-setting-view" style="padding: 10px;">
+						<span>代码显示</span>
+						<div id="modelCdDispSwitch" class="mui-switch mui-switch-mini" style="float: right;">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</body>
+	<script src="../../../js/mui.min.js"></script>
+	<script src="../../../js/jquery.min.js"></script>
+	<script src="retrieveHabit.js"></script>
+</html>

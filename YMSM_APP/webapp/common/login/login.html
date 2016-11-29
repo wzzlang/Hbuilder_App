@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../../css/common.css" rel="stylesheet" />	
+		<style>
+			html,body{
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content" style="background-color: #FFFFFF;">
+			<div class="com-login-img-contain" align="center">
+				<div class="com-login-img-padding">
+					<img class="com-login-img" src="../../../images/icon/login.png"/>
+				</div>
+			</div>
+			<form id='login-form' style="margin: auto 30px;" >
+				<div class="mui-input-row" >
+					<input id='accountCd' type="text" class="mui-input-clear" placeholder="用户名/手机号码">
+				</div>
+				<div class="mui-input-row">
+					<input id='pwd' type="password" class="mui-input-password" placeholder="请输入密码">
+				</div>
+			</form>
+			<div class="common-btn-padded" style="margin-top: 30px;">
+				<button id='loginBtn' class="mui-btn common-btn-block common-btn-retrieve">登&nbsp;录</button>
+			</div>
+			<div style="margin: auto 30px;margin-top: -12px;">
+				<div class="link-area"><a id='forgetPwd'>忘记密码?</a></div>
+				<div id="checkBoxContain" class="mui-input-row mui-checkbox mui-left">
+					<label style="padding-left: 30px;color: #007AFF;font-size: 15px;padding-top: 13px;">记住用户名</label>
+					<input id="rmbAccountCdBox" type="checkbox" style="left: 0;">
+				</div>
+			</div>
+		</div>
+		<script src="../../../js/common.js"></script>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="login.js" ></script>
+	</body>
+</html>

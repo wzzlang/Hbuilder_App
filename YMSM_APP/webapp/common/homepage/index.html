@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="../../../css/common.css">
+		<link rel="stylesheet" href="../../../css/iconfont.css">
+		<script src="../../../js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="picSlider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop" id="picSliderContain" style="display:none">
+			</div>
+			<div class="mui-slider-indicator" id="picSliderIndicatorContain" style="display:none">
+			</div>
+		</div>
+		<ul id="noticeHomePgArea" class="mui-table-view">
+		</ul>
+		<ul id="functionList" class="mui-table-view mui-grid-view mui-grid-9 color-gradient" style="margin-top: 3px;">
+            <li id="MAIN_01" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="display: none;">
+                <div class="mui-media-body" style="margin-bottom: 7px; margin-top: 0px; font-size: 16px;">营业报告</div>
+                <img style="width: 100%;" src="../../../images/icon/home_01.png" />
+                <div id="MAIN_01_SUBLIST" style="display:none;"></div>
+            </li>
+            <li id="MAIN_02" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="display: none;">
+                <div class="mui-media-body" style="margin-bottom: 7px; margin-top: 0px; font-size: 16px;">三包卡</div>
+                <img style="width: 100%;" src="../../../images/icon/home_02.png" />
+                <div id="MAIN_02_SUBLIST" style="display:none;"></div>
+            </li>
+            <li id="MAIN_03" class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="display: none;">
+                <div class="mui-media-body" style="margin-bottom: 7px; margin-top: 0px; font-size: 16px;">进出库</div>
+                <img style="width: 100%;" src="../../../images/icon/home_03.png" />
+                <div id="MAIN_03_SUBLIST" style="display:none;"></div>
+            </li>
+        </ul>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/data/functionData.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+		<script src="../../../js/jquery.js"></script>
+		<script src="index.js"></script>		
+	</body>
+</html>

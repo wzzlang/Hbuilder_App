@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/iconfont.css" />
+		<link rel="stylesheet" href="../../../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style>
+			.mui-popover {
+				height: 80%;
+				width: 98%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">出库</h1>
+		</header>
+		<div class="mui-content common-table-view" style="padding-bottom: 30px">
+			
+			<ul class="common-table-view">
+				 <li class="common-table-view-cell" style="padding: 0px 0px;">
+				 	<div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="color: #000000;">
+						<a class="mui-control-item mui-active" id="sellingTab"     name="tabRadio">
+							零售
+						</a>
+						<a class="mui-control-item" id="wholesaleTab" 	name="tabRadio">
+							批发
+						</a>
+						<a class="mui-control-item" id="adjustmentTab"  name="tabRadio">
+							调拨
+						</a>
+						<a class="mui-control-item" id="returnTab"   	name="tabRadio">
+							退货
+						</a>
+						<a class="mui-control-item" id="otherTab"   	name="tabRadio">
+							其他
+						</a>
+					</div>
+				 </li>
+		         <li style="padding: 8px 15px;">
+		         	<div class="mui-content-padded" align="center">
+						<button id='mainDealerPicker'  	name="mainDealerPicker" 	class="input mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;text-align:center;">请选择客户</button>
+						<input  id="mainDealerId"      	name="mainDealerPicker" 	type="text" style="display: none;" />
+						<button id='subDealerPicker'   	name="subDealerPicker" 		class="input mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;text-align:center;">请选择客户</button>
+						<input  id="subDealerId"      	name="subDealerPicker" 		type="text" style="display: none;" />
+						<button id='subSubDealerPicker' name="subSubDealerPicker" 	class="input mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;text-align:center;">请选择客户</button>
+						<input  id="subSubDealerId"     name="subSubDealerPicker" 	type="text" style="display: none;" />
+						<button id='consigneePicker' 	name="consigneePicker" 		class="input mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;text-align:center;">请选择收货人</button>
+						<input  id="consigneeId"     	name="consigneePicker" 		type="text" style="display: none;" />
+						<button id='whPicker'        	name="whPicker"       		class="input mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;text-align:center;">请选择仓库</button>
+						<input  id="whId"            	name="whPicker"       		type="text" style="display: none;" />
+					</div>
+		         </li>
+			</ul>
+			
+			<div class="mui-content-padded" align="center" style="padding-top:30px">
+				<span id="scanBarcodeIcon" class="scan-barcode"></span>
+			</div>
+			<div id="scanResult" class="mui-content-padded">
+				<ul id="barcodeList" class="barcodeList" style="text-align:left;">
+				</ul>
+			</div>
+			
+			<div id="footTotal" class="mui-content-padded" style="display: none;">
+				<table>
+					<tr>
+						<td style="border-bottom: 0px; text-align: left;" class="common-font">
+							合计:<span id="recordCount">0</span>
+						</td>
+						<td style="border-bottom: 0px; text-align: right;">
+							<a id='cleanAll'>清空全部</a>
+						</td>
+					</tr>
+				</table >
+			</div>
+		</div>
+		<div class="common-btn-padded" style="padding:20px 0px">
+			<a id='submitBtn' type="button" href="#frameInfoContain" class="mui-btn common-btn-block common-btn-retrieve">提交</a>
+		</div>
+		
+		<div id="frameInfoContain" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+				<div id="frameInfoDetail" class="mui-scroll">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/commonHelper.js"></script>
+		<script type="text/javascript" src="../../../js/mui.picker.js"></script>
+		<script type="text/javascript" src="../../../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../../js/mui.picker.all.js"></script>
+		<script type="text/javascript" src="../../../js/barcode.js"></script>
+		<script type="text/javascript" src="../../../js/data/modelData.js"></script>
+		<script type="text/javascript" src="../../../js/data/orgData.js"></script>
+		<script type="text/javascript" src="../../../js/data/areaData.js"></script>
+		<script type="text/javascript" src="../../../js/data/whData.js"></script>
+		<script type="text/javascript" src="mmfa02_shipment.js"></script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  color: #EE7600;
+}
+.icon-stock:before { content: "\e600"; }
+.icon-search:before { content: "\e601"; }
+.icon-business-report:before { content: "\e602"; }
+.icon-user-analysis:before { content: "\e603"; }
+.icon-wh-out:before { content: "\e604"; }
+.icon-notice:before { content: "\e605"; }
+.icon-scan-barcode-temp1:before { content: "\e606"; }
+.icon-website:before { content: "\e607"; }
+.icon-wh-in-out:before { content: "\e608"; }
+.icon-selling-car:before { content: "\e609"; }
+.icon-daliy-psi:before { content: "\e60a"; }
+.icon-user-card:before { content: "\e60b"; }
+.icon-wh-in-out-analysis:before { content: "\e60c"; }
+.icon-hot:before { content: "\e60d"; }
+.icon-unfinished:before { content: "\e60e"; }
+.icon-wh-out:before { content: "\e60f"; }
+.icon-wh-in:before { content: "\e610"; }
+.icon-read-sign:before { content: "\e611"; }
+.icon-order-inquiry:before { content: "\e612"; }
+.icon-notice1:before { content: "\e613"; }
+.icon-analys:before { content: "\e614"; }
+.icon-retail-analys:before { content: "\e615"; }
+.icon-scan-barcode-temp2:before { content: "\e616"; }
+.icon-scan-barcode:before { content: "\e617"; }

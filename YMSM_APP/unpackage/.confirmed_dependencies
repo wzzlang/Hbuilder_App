@@ -1,0 +1,414 @@
+{
+  "main.html": {
+    "refer": [
+      "setting.html",
+      "sub-main/sub-main-home.html",
+      "sub-main/sub-main-message.html",
+      "sub-main/sub-main-setting.html",
+      "sub-main/ivocing/ivocing.html"
+    ],
+    "resources": [
+      "fonts/mui.ttf",
+      "sub-main/sub-main-home.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "libs/easymob-webim-sdk/jquery-1.11.1.js"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "images/sinaweibo.png",
+      "css/mui.min.css",
+      "css/style.css",
+      "images/weixin.png",
+      "images/qq.png",
+      "js/mui.enterfocus.js"
+    ],
+    "refer": [
+      "main.html",
+      "forget_password.html",
+      "reg.html"
+    ]
+  },
+  "setting.html": {
+    "resources": [
+      "libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+      "fonts/mui.ttf",
+      "libs/easymob-webim-sdk/json2.js",
+      "libs/easymob-webim-sdk/jquery-1.11.1.js",
+      "js/mui.locker.js",
+      "js/feedback.js",
+      "css/feedback-page.css",
+      "js/feedback-page.js",
+      "libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+      "js/mui.view.js"
+    ],
+    "refer": []
+  },
+  "reg.html": {
+    "refer": [
+      "login.html"
+    ],
+    "resources": [
+      "fonts/mui.ttf"
+    ]
+  },
+  "sub-main/sub-main-home.html": {
+    "resources": [
+      "css/mui.min.css",
+      "css/app.css",
+      "images/cbd.jpg",
+      "images/muwu.jpg",
+      "images/yuantiao.jpg",
+      "fonts/mui.ttf",
+      "images/shuijiao.jpg",
+      "js/mui.min.js",
+      "images/60x60.gif",
+      "sub-main/ivocing/ivocing.html",
+      "images/icon-imag/ýG1.png",
+      "images/icon-imag/ýG6.png",
+      "images/icon-imag/ýG2.png",
+      "images/icon-imag/ýG3.png",
+      "images/icon-imag/ýG4.png",
+      "images/icon-imag/ýG7.png",
+      "images/icon-imag/ýG5.png",
+      "images/icon-imag/ýG1.png",
+      "images/icon-imag/ýG6.png",
+      "images/icon-imag/ýG2.png",
+      "images/icon-imag/ýG3.png",
+      "images/icon-imag/ýG4.png",
+      "images/icon-imag/ýG7.png",
+      "images/icon-imag/ýG5.png",
+      "images/icon-imag/ýG1.png",
+      "images/icon-imag/ýG6.png",
+      "images/icon-imag/ýG2.png",
+      "images/icon-imag/ýG3.png",
+      "images/icon-imag/ýG4.png",
+      "images/icon-imag/ýG7.png",
+      "images/icon-imag/ýG5.png",
+      "images/icon-imag/ýG1.png",
+      "images/icon-imag/ýG6.png",
+      "images/icon-imag/ýG2.png",
+      "images/icon-imag/ýG3.png",
+      "images/icon-imag/ýG4.png",
+      "images/icon-imag/ýG7.png",
+      "images/icon-imag/ýG5.png",
+      "images/ýG2.png",
+      "images/ýG6.png",
+      "images/ýG3.png",
+      "images/ýG5.png",
+      "images/ýG1.png",
+      "images/ýG4.png",
+      "images/ýG7.png",
+      "images/ýG2.png",
+      "images/ýG6.png",
+      "images/ýG3.png",
+      "images/ýG5.png",
+      "images/ýG1.png",
+      "images/ýG4.png",
+      "images/ýG7.png",
+      "images/ýG2.png",
+      "images/ýG7.png",
+      "images/ýG6.png",
+      "images/ýG3.png",
+      "images/ýG5.png",
+      "images/ýG1.png",
+      "images/ýG4.png",
+      "libs/easymob-webim-sdk/jquery-1.11.1.js",
+      "images/ýG2.png",
+      "images/ýG6.png",
+      "images/ýG3.png",
+      "images/ýG5.png",
+      "images/ýG1.png",
+      "images/ýG4.png",
+      "images/ýG7.png",
+      "js/myopenwindow.js",
+      "images/ýG2.png",
+      "images/ýG6.png",
+      "images/ýG3.png",
+      "images/ýG5.png",
+      "images/ýG1.png",
+      "images/ýG4.png",
+      "images/ýG7.png"
+    ],
+    "refer": [
+      "sub-main/ivocing/ivocing.html",
+      "sub-main/ivocing.html"
+    ]
+  },
+  "sub-main/sub-main-message.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "sub-main/ivocing/ivocing.html": {
+    "resources": [
+      "js/mui.min.js",
+      "js/own.js"
+    ],
+    "refer": []
+  },
+  "sub-main/sub-main-setting.html": {
+    "resources": [
+      "images/logo.png",
+      "libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+      "libs/easymob-webim-sdk/json2.js",
+      "libs/easymob-webim-sdk/jquery-1.11.1.js",
+      "js/feedback.js",
+      "css/feedback-page.css",
+      "js/feedback-page.js",
+      "libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+      "js/mui.view.js",
+      "images/iconfont-tianjia.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "sub-main/ivocing.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.min.js"
+    ],
+    "refer": []
+  },
+  "CSS-test.html": {
+    "resources": [
+      "js/common.js",
+      "css/common.css",
+      "css/mui.min.css",
+      "js/mui.picker.all.js",
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "js/mui.picker.js",
+      "css/app.css",
+      "js/mui.poppicker.js",
+      "css/mui.picker.min.css"
+    ],
+    "refer": []
+  },
+  "webapp/common/login/login.html": {
+    "resources": [
+      "images/icon/login.png",
+      "js/common.js",
+      "js/jquery.min.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "webapp/common/login/login.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "webapp/common/homepage/homePage.html"
+    ]
+  },
+  "webapp/common/homepage/index.html": {
+    "resources": [
+      "webapp/common/homepage/index.js",
+      "images/icon/home_02.png",
+      "images/icon/home_03.png",
+      "css/iconfont.css",
+      "images/icon/home_01.png",
+      "js/data/functionData.js",
+      "images/icon/home_00.png",
+      "js/jquery.js",
+      "images/home_img.jpg"
+    ],
+    "refer": [
+      "webapp/common/homepage/psiMenuList.html",
+      "webapp/common/homepage/userCardMenuList.html"
+    ]
+  },
+  "webapp/common/setting/setting.html": {
+    "resources": [
+      "webapp/common/setting/setting.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "webapp/common/message/messageSub.html": {
+    "resources": [
+      "webapp/common/message/messageSub.js",
+      "images/icon/message_01.png",
+      "js/jquery.min.js",
+      "images/icon/message_02.png",
+      "css/iconfont.css"
+    ],
+    "refer": []
+  },
+  "webapp/common/homepage/homePage.html": {
+    "resources": [
+      "webapp/common/homepage/index.html",
+      "images/icon/icons.png",
+      "webapp/common/homepage/homepage.js"
+    ],
+    "refer": [
+      "webapp/common/homepage/index.html",
+      "webapp/common/setting/setting.html",
+      "webapp/common/message/message.html"
+    ]
+  },
+  "webapp/common/message/message.html": {
+    "resources": [
+      "webapp/common/message/message.js",
+      "webapp/common/message/messageSub.html"
+    ],
+    "refer": [
+      "webapp/common/message/messageSub.html"
+    ]
+  },
+  "webapp/mma/common/commonRetrieve.html": {
+    "resources": [
+      "js/data/modelData.js",
+      "js/data/orgData.js",
+      "js/mui.picker.js",
+      "js/mui.picker.min.js",
+      "js/data/areaData.js",
+      "js/data/whData.js",
+      "webapp/mma/common/commonRetrieve.js",
+      "js/commonHelper.js",
+      "css/mui.picker.min.css",
+      "css/mui.poppicker.css",
+      "js/mui.picker.all.js",
+      "fonts/mui.ttf",
+      "js/common.js",
+      "css/common.css",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "js/jquery.js"
+    ],
+    "refer": [
+      "webapp/mma/mmaz01/mmaz01_dealerPSIDetail.html",
+      "webapp/mma/mmaz01/mmaz01_orgPSIDetail.html"
+    ]
+  },
+  "webapp/common/homepage/psiMenuList.html": {
+    "resources": [
+      "images/icon/psi_06.png",
+      "webapp/common/homepage/psiMenuList.js",
+      "images/icon/psi_03.png",
+      "images/icon/psi_04.png",
+      "images/icon/psi_05.png",
+      "images/icon/psi_02.png",
+      "images/icon/psi_01.png",
+      "fonts/mui.ttf",
+      "css/iconfont.css"
+    ],
+    "refer": [
+      "webapp/mma/common/commonRetrieve.html"
+    ]
+  },
+  "webapp/mma/mmaz01/mmaz01_dealerPSIDetail.html": {
+    "resources": [
+      "webapp/mma/mmaz01/mmaz01_dealerPSIDetail.js",
+      "js/common.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/jquery.js"
+    ],
+    "refer": []
+  },
+  "webapp/common/homepage/userCardMenuList.html": {
+    "resources": [
+      "webapp/common/homepage/userCardMenuList.js",
+      "images/icon/inOut_04.png",
+      "images/icon/input.png",
+      "fonts/mui.ttf"
+    ],
+    "refer": [
+      "webapp/mma/mmaa08/mmaa08_userCardInput.html",
+      "webapp/mma/mmaz08/mmaz08_userCardQuery.html"
+    ]
+  },
+  "webapp/mma/mmaa08/mmaa08_userCardInput.html": {
+    "resources": [
+      "webapp/mma/mmaa08/mmaa08_userCardInput.js",
+      "js/data/areaData.js",
+      "js/commonHelper.js",
+      "images/picture_help.jpg",
+      "css/mui.picker.min.css",
+      "css/mui.poppicker.css",
+      "js/mui.picker.all.js",
+      "js/common.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "css/mui.min.css",
+      "js/jquery.js",
+      "fonts/mui.ttf",
+      "webapp/mma/mmaa09/mmaa09_userCardInvestigate.html",
+      "images/icon/for_more.png",
+      "webapp/mma/mmaa09/mmaa09_userCardSurvey.html",
+      "webapp/mma/mmaa08/mmaa08_userCardSurvey.html"
+    ],
+    "refer": [
+      "webapp/mma/mmaa09/mmaa09_userCardInvestigate.html",
+      "webapp/mma/mmaa09/mmaa09_userCardSurvey.html",
+      "webapp/mma/mmaa08/mmaa08_userCardSurvey.html"
+    ]
+  },
+  "webapp/mma/mmaa09/mmaa09_userCardInvestigate.html": {
+    "resources": [
+      "images/icon/photo.png",
+      "webapp/mma/mmaa08/mmaa08_userCardInput.html"
+    ],
+    "refer": [
+      "webapp/mma/mmaa08/mmaa08_userCardInput.html"
+    ]
+  },
+  "webapp/mma/mmaz08/mmaz08_userCardQuery.html": {
+    "resources": [
+      "webapp/mma/mmaz08/mmaz08_userCardQuery.js",
+      "js/data/areaData.js",
+      "js/commonHelper.js",
+      "css/mui.picker.min.css",
+      "css/mui.poppicker.css",
+      "js/mui.picker.all.js"
+    ]
+  },
+  "webapp/mma/mmaa09/mmaa09_userCardSurvey.html": {
+    "resources": [
+      "webapp/mma/mmaa09/mmaa09_userCardSurvey.js",
+      "images/icon/photo.png",
+      "webapp/mma/mmaa08/mmaa08_userCardInput.html"
+    ],
+    "refer": [
+      "webapp/mma/mmaa08/mmaa08_userCardInput.html"
+    ]
+  },
+  "webapp/mma/mmaz01/mmaz01_orgPSIDetail.html": {
+    "resources": [
+      "webapp/mma/mmaz01/mmaz01_orgPSIDetail.js"
+    ]
+  },
+  "webapp/mma/mmaa08/mmaa08_userCardSurvey.html": {
+    "resources": [
+      "webapp/mma/mmaa08/mmaa08_userCardSurvey.js",
+      "images/icon/photo.png",
+      "js/common.js",
+      "js/mui.min.js",
+      "css/common.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/commonHelper.js",
+      "css/mui.picker.min.css",
+      "js/mui.picker.all.js",
+      "js/jquery.js",
+      "webapp/mma/mmaa08/mmaa08_userCardInput.html"
+    ],
+    "refer": [
+      "webapp/mma/mmaa08/mmaa08_userCardInput.html"
+    ]
+  }
+}

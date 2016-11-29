@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../css/common.css" />
+		<link rel="stylesheet" href="../../../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../../css/mui.picker.min.css" />
+		<style>
+			/*重写mui方法，清除行底部下划线*/
+			.mui-table-view-cell:after{
+				background-color:#fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" id="con_title"></h1>
+		</header>
+		<div class="mui-content">
+			
+			<ul class="common-table-view" id="psiType" style="display: none;">
+				<li class="com-retrieve-content" align="center">
+				 	<div class="com-segmented-pad">
+						<div id="segmentedControl" class="mui-segmented-control com-segmented-control">
+							<a class="mui-control-item" id="psiTypeProductRadio" name="psiTypeRadio" style="display: none;">
+								产品
+							</a>
+							<a class="mui-control-item" id="psiTypeDealerRadio" name="psiTypeRadio"  style="display: none;">
+								经销商
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			
+			<ul class="common-table-view" id="showType" style="display: none;">
+				<li class="com-retrieve-content" align="center">
+				 	<div class="com-segmented-pad">
+						<div id="segmentedControl" class="mui-segmented-control com-segmented-control">
+							<a class="mui-control-item" id="showTypeTotalRadio"  name="showTypeRadio" style="display: none;">
+								合计
+							</a>
+							<a class="mui-control-item" id="showTypeDetailRadio" name="showTypeRadio" style="display: none;">
+								产品系列
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+				
+			<ul class="common-table-view" id="period" style="display: none;">
+				 <li class="common-table-view-cell">
+				 	<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="color: #000000;">
+						<a class="mui-control-item" id="periodDateRadio" name="periodRadio"  style="display: none;">
+							日期
+						</a>
+						<a class="mui-control-item" id="periodMonthRadio" name="periodRadio" style="display: none;">
+							月份
+						</a>
+						<a class="mui-control-item" id="periodYearRadio" name="periodRadio"  style="display: none;">
+							年份
+						</a>
+					</div>
+				 </li>
+		         <li style="padding: 9px 0px;">
+		         	<div class="mui-content-padded" align="center">
+						<button id='dayFromPicker' name="dayFromPicker" data-options='{"type":"date"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font" style="display: none;">请选择日期</button>
+						<input  id="dbDateFrom"    name="dayFromPicker"	type="text"	style="display: none;"/>
+						<div style="display: inline-block;margin: 4px 0;">&nbsp;&nbsp;</div>
+						<button id='dayToPicker'   name="dayToPicker" data-options='{"type":"date"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font" style="display: none;">请选择日期</button>
+						<input  id="dbDateTo" 	   name="dayToPicker" type="text"	style="display: none;"/>
+						
+						<button id='monthFromPicker' name="monthFromPicker" data-options='{"type":"month"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font" style="display: none;">请选择月份</button>
+						<input  id="dbMonthFrom" 	 name="monthFromPicker"	type="text"	style="display: none;"/>
+						<div style="display: inline-block;margin: 4px 0;">&nbsp;&nbsp;</div>
+						<button id='monthToPicker' 	 name="monthToPicker" data-options='{"type":"month"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font" style="display: none;">请选择月份</button>
+						<input  id="dbMonthTo" 		 name="monthToPicker" type="text"	style="display: none;"/>
+						
+						<button id='yearPicker'  name="yearPicker"  data-options='{"type":"year"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font" style="display: none;">请选择年份</button>
+						<input  id="dbYear"      name="yearPicker"  type="text" style="display: none;" />
+					</div>
+		         </li>
+			</ul>
+			
+			<ul class="common-table-view" id="area" style="display: none;">
+				 <li class="common-table-view-cell">
+				 	<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="color: #000000;">
+						<a class="mui-control-item" id="areaAllRadio"      name="areaRadio" style="display: none;">
+							全国
+						</a>
+						<a class="mui-control-item" id="areaProvinceRadio" name="areaRadio" style="display: none;">
+							省份
+						</a>
+						<a class="mui-control-item" id="areaOrgRadio"      name="areaRadio" style="display: none;">
+							办事处
+						</a>
+						<a class="mui-control-item" id="areaBranchRadio"   name="areaRadio" style="display: none;">
+							支店
+						</a>
+						<a class="mui-control-item" id="areaDealerRadio"   name="areaRadio" style="display: none;">
+							渠道
+						</a>
+						<a class="mui-control-item" id="areaWhRadio"       name="areaRadio" style="display: none;">
+							仓库
+						</a>
+						<a class="mui-control-item" id="areaOfficeRadio"   name="areaRadio" style="display: none;">
+							销售公司
+						</a>
+						<a class="mui-control-item" id="areaOwnShopRadio"  name="areaRadio" style="display: none;">
+							本店
+						</a>
+					</div>
+				 </li>
+		         <li style="padding: 8px 0px;">
+		         	<div class="mui-content-padded" align="center">
+		         		<button id='provincePicker'  name="provincePicker"  class="mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;" >请选择省份</button>
+						<input  id="provinceId"      name="provincePicker"  type="text" style="display: none;" />
+						<button id='whPicker'        name="whPicker"        class="mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;" >请选择仓库</button>
+						<input  id="whId"            name="whPicker"        type="text" style="display: none;" />
+						<button id='orgPicker'       name="orgPicker"       class="mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;" >请选择办事处</button>
+						<input  id="orgId"           name="orgPicker"       type="text" style="display: none;" />
+						<button id='branchPicker'    name="branchPicker"    class="mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 90%;" >请选择支店</button>
+						<input  id="branchId"        name="branchPicker"    type="text" style="display: none;" />
+						<button id='dealerPicker'    name="dealerPicker"    class="mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 60%;text-align: left;padding-left: 16%;" >请选择渠道</button>
+						<input  id="dealerId"        name="dealerPicker"    type="text" style="display: none;" />
+						<input  id="dealerCd"     	 type="text" 		    class="mui-input-clear" style="display: none;text-transform:uppercase;width: 35%;height: 32px;border-radius: 0;border: 0;border-bottom: 1px solid #E8EAEB;text-align:left;" placeholder="请输入渠道代码">
+						<button id='canalCityPicker' name="canalCityPicker" class="mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 96%; text-align: left;padding-left: 16%;" >请选择地区</button>
+						<input  id="canalCityId"     name="canalCityPicker" type="text" style="display: none;" />
+						<button id='subDealerPicker' name="subDealerPicker" class="mui-btn mui-icon mui-icon-forward mui-right common-btn" style="display: none;width: 96%; margin-top: 6px;text-align: left;padding-left: 16%;" >请选择分销渠道</button>
+						<input  id="subDealerId"     name="subDealerPicker" type="text" style="display: none;" />
+					</div>
+					 <p class="com-remark-red">
+						<span id="areaMustInput" style="padding: 8px 0px;"></span>
+					 </p>
+		         </li>
+			</ul>
+			
+			<ul class="common-table-view" id="targetDealer" style="display: none;">
+				 <li style="padding: 9px 0;">
+			        <div style="color: #000; text-align: center;">
+			        	<span>
+							<input id="showDlDataCb" name="checkbox" value="Item 1" type="checkbox" style="vertical-align: middle;">
+							<span style="vertical-align: middle; font-weight: bold;">代理/直销</span>
+						</span>
+						<span style="margin-left: 20px;">
+							<input id="showSubDlDataCb" name="checkbox" value="Item 1" type="checkbox" style="vertical-align: middle;">
+							<span style="vertical-align: middle; font-weight: bold;">分销商</span>
+						</span>
+					</div>
+		         </li>
+			</ul>
+			
+			<ul class="common-table-view" id="product" style="display: none;">
+				 <li class="common-table-view-cell">
+				 	<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="color: #000000;">
+						<a class="mui-control-item" id="productCategoryRadio" name="productRadio" style="display: none;">
+							目录
+						</a>
+						<a class="mui-control-item" id="productClassRadio"    name="productRadio" style="display: none;">
+							系列
+						</a>
+						<a class="mui-control-item" id="productModelRadio"    name="productRadio" style="display: none;">
+							机型
+						</a>
+					</div>
+				 </li>
+				 <li style="padding: 8px 0px;">
+		         	<div class="mui-content-padded" align="center">
+						<button id='modelCategoryPicker' name="modelCategoryPicker" class="mui-btn mui-icon mui-icon-forward mui-right common-btn"  style="display: none;width: 60%;text-align:center;">请选择目录</button>
+						<input  id="modelCategoryId"     name="modelCategoryPicker" type="text"   style="display: none;" />
+						<input  id="modelCategoryNm"     type="text" class="mui-input-clear" style="display: none;width: 35%;height: 32px;border-radius: 0;border: 0;border-bottom: 1px solid #E8EAEB;text-align:left;" placeholder="请输入目录名称">
+					</div>
+					<div class="mui-content-padded" align="center">
+						<button id='modelClassPicker' name="modelClassPicker" class="mui-btn mui-icon mui-icon-forward mui-right common-btn"  style="display: none;width: 60%;text-align:center;">请选择系列</button>
+						<input  id="modelClassId"     name="modelClassPicker" type="text" style="display: none;"/>
+						<input  id="modelClassNm"     type="text" class="mui-input-clear" style="display: none;width: 35%;height: 32px;border-radius: 0;border: 0;border-bottom: 1px solid #E8EAEB;text-align:left;" placeholder="请输入系列名称">
+					</div>
+					<div class="mui-content-padded" align="center">
+						<button id='modelPicker' name="modelPicker" class="mui-btn mui-icon mui-icon-forward mui-right common-btn"  style="display: none;width: 60%;text-align:center;">请选择机型</button>
+						<input  id='modelId'     name="modelPicker" type="text" style="display: none;"/>
+						<input  id="modelNm"     type="text" class="mui-input-clear" style="display: none;width: 35%;height: 32px;border-radius: 0;border: 0;border-bottom: 1px solid #E8EAEB;text-align:left;" placeholder="请输入机型名称">
+					</div>
+		         </li>
+			</ul>
+			
+			<ul class="common-table-view" id="exhaustDiv" style="display: none;">
+				 <li id="showMoreExhaust" class="mui-table-view-cell mui-collapse" align="center" style="font-size: 15px; font-weight: bold; padding: 10px 15px;border-bottom: 1px solid #E8EAEB;">
+				 	<a class="mui-navigate-right" style="color: #000000;background-color: #fff;">
+						排量
+					</a>
+				 </li>
+				 <li class="mui-table-view-cell" style="background-color: #FFFFFF;">
+					<div id="exhaustDivList" class="checkboxOne">
+					</div>
+					<div id="collapseExhaustDivList" class="mui-collapse-content checkboxOne" style="display: none;">
+					</div>
+				</li>
+			</ul>
+			
+			<ul class="common-table-view" id="colorDiv" style="display: none;">
+				 <li id="showMoreColor" class="mui-table-view-cell mui-collapse" align="center" style="font-size: 15px; font-weight: bold; padding: 10px 15px;border-bottom: 1px solid #E8EAEB;">
+				 	<a class="mui-navigate-right" style="color: #000000;background-color: #fff;">
+						颜色
+					</a>
+				 </li>
+				 <li class="mui-table-view-cell" style="background-color: #FFFFFF;">
+					<div id="colorDivList" class="checkboxOne">
+					</div>
+					<div id="collapseColorDivList" class="mui-collapse-content checkboxOne" style="display: none;">
+					</div>
+				</li>
+			</ul>
+			
+			<ul class="common-table-view" id="packingYear" style="display: none;">
+				 <li id="packingYearLabel" class="mui-table-view-cell" align="center" style="font-size: 15px; font-weight: bold; padding: 10px 15px;border-bottom: 1px solid #E8EAEB;">
+				 	<a style="color: #000000;background-color: #fff;">
+						生产年份
+					</a>
+				 </li>
+		         <li style="padding: 9px 0px;">
+		         	<div class="mui-content-padded" align="center">
+						<button id='packingYearPicker'  name="packingYearPicker"  data-options='{"type":"year","contents":[{"name":"请选择生产年份","value":""}]}' class="input-year mui-btn mui-icon mui-icon-forward mui-right common-btn"  style="display: none;">请选择生产年份</button>
+						<input  id="dbPackingYear"      name="packingYearPicker"  type="text" style="display: none;" />
+					</div>
+		         </li>
+			</ul>
+			
+		</div>
+		
+		<div class="common-btn-padded">
+			<button id='retrieveBtn' class="mui-btn common-btn-block common-btn-retrieve">查询</button>
+		</div>
+		<div id="retrieveRemarks" class="com-remark-blue">&nbsp;</div>
+		
+		<script type="text/javascript" src="../../../js/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/commonHelper.js"></script>
+		<script type="text/javascript" src="../../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../../js/mui.picker.js"></script>
+		<script type="text/javascript" src="../../../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../../../js/mui.picker.all.js"></script>
+		<script type="text/javascript" src="../../../js/data/modelData.js"></script>
+		<script type="text/javascript" src="../../../js/data/orgData.js"></script>
+		<script type="text/javascript" src="../../../js/data/areaData.js"></script>
+		<script type="text/javascript" src="../../../js/data/whData.js"></script>
+		<script type="text/javascript" src="commonRetrieve.js"></script>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../../css/common.css" rel="stylesheet" />
+		<script type="text/javascript" src="../../../js/mui.min.js" ></script>
+		<style>
+			.mui-badge-red {
+				color: #fff;
+				background-color: #E02E22;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				font-size: 15px;
+			}
+			.mui-table-view-cell.mui-active {
+				color: #F00A0A;
+				background: #FFE4E1;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+				font-weight:400;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				border-bottom: 0;
+			}
+			.sort-icon-up{
+				width: 20px; 
+				height: 20px; 
+				display: inline-block; 
+				vertical-align: middle;
+				background:url(../../../images/icon/sort_up.png) no-repeat; 
+				background-size: 20px 20px;
+				background-position: -4px 2px;
+			}
+			.sort-icon-down{
+				width: 20px; 
+				height: 20px; 
+				display: inline-block; 
+				vertical-align: middle;
+				background:url(../../../images/icon/sort_down.png) no-repeat; 
+				background-size: 20px 20px;
+				background-position: -4px -8px;
+			}
+			.sort-contain {
+				position: fixed;
+				top: 44px;
+				right: 0;
+				left: 0;
+				z-index: 100;
+				background-color: #F2F2F2;
+				margin-bottom: 35px;
+			}
+		</style>
+	</head>
+	<body id="qbody">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">进销存日报</h1>
+		</header>
+		<div class="sort-contain">
+			<ul id="tabRadioContain" class="common-table-view" style="margin-bottom: 0; display: none;">
+				<li class="common-table-view-cell" style="padding: 0px 0px;">
+				 	<div id="segmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="color: #000000;">
+						<a class="mui-control-item" id="dealerTab"     name="tabRadio">
+							<span>经销商</span>
+							<span class="sort-icon sort-icon-up" style="display: none;"></span>
+						</a>
+						<a class="mui-control-item mui-active" id="inPsiTab" 	name="tabRadio">
+							<span>订单</span>
+							<span class="sort-icon sort-icon-down"></span>
+						</a>
+						<a class="mui-control-item" id="retailPsiTab"  name="tabRadio">
+							<span>U销</span>
+							<span class="sort-icon sort-icon-down" style="display: none;"></span>
+						</a>
+						<a class="mui-control-item" id="wholesalePsiTab"   	name="tabRadio" style="display: none;">
+							<span>批发</span>
+							<span class="sort-icon sort-icon-down" style="display: none;"></span>
+						</a>
+						<a class="mui-control-item" id="stockPsiTab"   	name="tabRadio">
+							<span>库存</span>
+							<span class="sort-icon sort-icon-down" style="display: none;"></span>
+						</a>
+					</div>
+				 </li>
+			</ul>
+		</div>
+		<div id="muiContent" class="mui-content">
+			<ul class="common-table-view">
+				 <li style="padding: 8px 15px;">
+				 	<b class="area-context">区域:<span id="areaName"></span></b>
+		         </li>
+				 <li style="padding: 8px 15px;">
+				 	<b class="area-context"><span id="period"></span></b>
+		         </li>
+			</ul>
+			<div>
+				<table id="dailyPsiInfo" class="common-table-view zebra">
+				</table>
+			</div>
+			<div id="psiInfo">
+			</div>
+		</div>
+		<script type="text/javascript" src="../../../js/jquery.js"></script>
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="mmaz01_orgPSIDetail.js"></script>
+	</body>
+</html>

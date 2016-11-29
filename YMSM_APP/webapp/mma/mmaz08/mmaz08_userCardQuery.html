@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../../../css/mui.min.css" />
+		<link rel="stylesheet" href="../../../css/common.css"/>
+		<link rel="stylesheet" href="../../../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../../css/mui.picker.min.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">三包卡录入查询</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="common-table-view">
+				 <li style="padding: 9px 15px;">
+		         	<div class="mui-content-padded" align="center">
+		         		<button id='provincePicker' name="provincePicker" 	class="mui-btn mui-icon mui-icon-forward mui-right common-btn">请选择省份</button>
+						<input  id="provinceId" 	name="provincePicker"	type="text"	style="display: none;"/>
+						<div style="display: inline-block;margin: 4px 0;">&nbsp;&nbsp;</div>
+						<button id='cityPicker' 	name="cityPicker" 		class="mui-btn mui-icon mui-icon-forward mui-right common-btn">请选择市</button>
+						<input  id="cityId" 		name="cityPicker"		type="text"	style="display: none;"/>
+					</div>
+					<p class="com-remark-red">
+						<span>*省份必须输入</span>
+					</p>
+		         </li>
+			</ul>
+			<ul class="common-table-view">
+				 <li style="padding: 9px 15px;">
+		         	<div class="mui-content-padded" align="center">
+		         		<button id='dayFromPicker'  name="dayFromPicker" data-options='{"type":"date"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font">请选择日期</button>
+						<input  id="dbDateFrom" 	name="dayFromPicker" type="text"	style="display: none;"/>
+						<div style="display: inline-block;margin: 4px 0;">&nbsp;&nbsp;</div>
+						<button id='dayToPicker' 	name="dayToPicker" 	data-options='{"type":"date"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font">请选择日期</button>
+						<input  id="dbDateTo" 		name="dayToPicker"	type="text"	style="display: none;"/>
+					</div>
+			        <p class="com-remark-red">
+						<span>*日期不得超过一个月</span>
+					</p>
+		         </li>
+			</ul>
+			<ul class="common-table-view">
+				 <li style="padding: 9px 0; margin-bottom: 15px;">
+			        <div style="color: #000; text-align: center;">
+			        	<span>
+							<input id="showWcDataCb" name="checkbox" value="Item 1" type="checkbox" style="vertical-align: middle;">
+							<span style="vertical-align: middle;">显示微信录入</span>
+						</span>
+						<span style="margin-left: 20px;">
+							<input id="showAppDataCb" name="checkbox" value="Item 1" type="checkbox" style="vertical-align: middle;">
+							<span style="vertical-align: middle;">显示App录入</span>
+						</span>
+					</div>
+		         </li>
+			</ul>
+			<div class="common-btn-padded">
+				<button id='retrieveBtn' class="mui-btn common-btn-block common-btn-retrieve">查&nbsp;询</button>
+			</div>
+			
+			<div id="retrieveRemarks" class="com-remark-blue">&nbsp;</div>
+			<div style="background-color: #FFFFFF;">
+				<div class="com-table-content">
+					<table id="resultDetailModel" class="com-tabel" border="1px solid">
+						<tr>
+							<td style="width: 35px;">No.</td>
+							<td colspan="2">经销商</td>
+							<td style="width: 90px;">三包卡数量</td>
+						</tr>
+						<tr>
+							<td colspan="3">合计</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../../../js/common.js"></script>
+		<script type="text/javascript" src="../../../js/commonHelper.js" ></script>
+		<script type="text/javascript" src="../../../js/data/areaData.js" ></script>
+		<script type="text/javascript" src="../../../js/mui.min.js" ></script>
+		<script type="text/javascript" src="../../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../../js/mui.picker.all.js" ></script>
+		<script type="text/javascript" src="mmaz08_userCardQuery.js" ></script>
+	</body>
+</html>

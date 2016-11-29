@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>进出库查询</title>
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../../css/common.css"  rel="stylesheet" />
+		<link href="../../../css/mui.poppicker.css" rel="stylesheet" />
+		<link href="../../../css/mui.picker.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">进出库查询</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="common-table-view">
+				<li style="padding: 9px 15px;">
+		         	<div class="mui-content-padded" align="center">
+		         		<button id='dayFromPicker'  name="dayFromPicker" data-options='{"type":"date"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font">请选择日期</button>
+						<input  id="dbDateFrom" 	name="dayFromPicker" type="text"	style="display: none;"/>
+						<div style="display: inline-block;margin: 4px 0;">&nbsp;&nbsp;</div>
+						<button id='dayToPicker' 	name="dayToPicker" 	data-options='{"type":"date"}' class="input mui-btn mui-icon mui-icon-forward mui-right common-btn common-font">请选择日期</button>
+						<input  id="dbDateTo" 		name="dayToPicker"	type="text"	style="display: none;"/>
+					</div>
+			        <p class="com-remark-red">
+						<span>*日期不得超过一个月</span>
+					</p>
+		        </li>
+			</ul>
+			<div class="common-btn-padded">
+				<button id='retrieveBtn' class="mui-btn common-btn-block common-btn-retrieve">查&nbsp;询</button>
+			</div>
+			<div style="background-color: #FFFFFF;">
+				<div class="com-table-content">
+					<table id="shipRecvInfo" class="com-tabel" border="1px solid">
+						<tr>
+							<td style="text-align: center;">日期</td>
+							<td style="text-align: center;">入库</td>
+							<td style="text-align: center;">出库</td>
+						</tr>
+						<tr>
+							<td style="text-align: center;">合计</td>
+							<td style="text-align: right;">0</td>
+							<td style="text-align: right;">0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="../../../js/jquery.js"></script>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script src="../../../js/mui.picker.all.js" ></script>
+		<script src="../../../js/data/areaData.js" ></script>
+		<script src="../../../js/commonHelper.js" ></script>
+		<script src="mmfz01_inOutRetrieve.js"></script>
+	</body>
+</html>

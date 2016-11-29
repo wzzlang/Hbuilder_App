@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>未完成运单</title>
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../css/common.css" />
+		<style>
+			.mui-table-view-cell:after{
+				height: 0;
+			}
+			.mui-table-view-cell .mui-active{
+				background-color: #FFF;
+			}
+			.mui-table-view-divider:after{
+				height: 0;
+			}
+			.cur-list-margin{
+				margin: 15px 0;
+			}
+			.cur-date-pad{
+				display: block;
+				font-size: 12px;
+				line-height: 12px;
+				font-weight: 400;
+				color: #999;
+			}
+			.cur-txt-grey{
+				color: #999;
+			}
+			.fixed-foot{
+				height: 50px;
+				z-index: 999;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 100%;
+			}
+			.fixed_inner{
+				margin: 0 auto;
+				position: relative;
+				background-color: #FFF;
+				border-top: 1px solid #CCC;
+			}
+			.tatal-point{
+				line-height:50px;
+				padding:0 10px;
+			}
+			.comfirm-btn-fix{
+				position:absolute; 
+				padding:6px; 
+				margin-right: 0;
+				right:0; 
+				top:0;}
+			.red,.red a{ color: #900!important;}
+			.f12{font-size:12px;}
+			.f22{font-size:22px;}
+			.cur-check-box{
+				position: absolute;
+				left: -20px;
+				z-index: 9;
+			}
+			.cur-sub-area{
+				font-weight: 400;
+				padding: 4px 15px;
+				color: #999;
+			}
+			.cur-padding-left{
+				padding-left: 22px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">未完成运单</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="common-table-view" id="inOutUnfinishied">
+				<li class="com-retrieve-content" align="center">
+				 	<div class="com-segmented-pad">
+						<div id="segmentedControl" class="mui-segmented-control com-segmented-control">
+							<a class="mui-control-item mui-active" id="shipmentTab" name="tabRadio">
+								出库
+							</a>
+							<a class="mui-control-item" id="receiveTab" name="tabRadio">
+								入库
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div id="shipListContain">
+			</div>
+			<div id="recvListContain">
+			</div>
+		</div>
+		<div id="footInfoArea" class="fixed-foot" style="display: none;">
+			<div class="fixed_inner">
+			    <div class="tatal-point">
+			        <p>
+			        	<span style="margin-left: 10px;">已选运单：<em id="totalWbQty" class="red f22">0</em></span>
+			        </p>
+			    </div>
+			    <div class="common-btn-padded comfirm-btn-fix" >
+					<button id='submitBtn' class="mui-btn common-btn-block common-btn-retrieve" style="font-size: 14px;padding: 8px 20px;">一键入库</button>
+				</div>
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script src="mmfz03_unfinished.js"></script>
+	</body>
+</html>

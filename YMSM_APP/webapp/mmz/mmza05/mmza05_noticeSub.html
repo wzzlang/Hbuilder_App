@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>公告通知</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<script src="../../../js/mui.min.js"></script>
+		<link rel="stylesheet" href="../../../css/iconfont.css">
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<link rel="stylesheet" href="../../../css/common.css">
+		<style>
+			.mui-table-view:before{
+				height: 0;
+			}
+			.mui-table-view:after{
+				height:0;
+			}
+			.mui-table-view-cell:after{
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--下拉刷新容器-->
+		<div id="noticeRefresh" class="mui-content mui-scroll-wrapper">
+			<!--数据列表-->
+			<div id="noticeContain" class="mui-scroll">
+			</div>
+		</div>
+		<script src="../../../js/common.js"></script>
+		<script src="../../../js/jquery.js"></script>
+		<script src="mmza05_noticeSub.js"></script>
+	</body>
+</html>

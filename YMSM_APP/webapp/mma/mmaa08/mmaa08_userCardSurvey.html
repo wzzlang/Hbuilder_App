@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>用户信息录入</title>
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../../css/common.css" rel="stylesheet" />
+		<link href="../../../css/mui.picker.min.css" rel="stylesheet"/>
+		<style>
+			html{
+				background-color:#FFFFFF;
+			}
+			.mui-input-group label{
+				width: 30%;
+				padding-right: 0;
+				font-size: 14px;
+				margin-top: 1px;
+			}
+			.mui-input-group:after{
+				background-color:#FFFFFF;
+			}
+			.mui-input-row label~input{
+				width: 70%;
+			}
+			
+			.mui-input-row .mui-btn{
+				font-family:"微软雅黑",Helvetica,Muiicons,sans-serif;
+				float: left;
+				padding: 6px 4px;
+				width: 30%;
+				color: #000;
+				margin: 5px 0;
+				margin-right: 6px;
+				border-radius: initial;
+				text-align: left;
+			}
+			.mui-input-group .save-input-btn {
+				font-size: 17px;
+				color: #fff;
+				border:1px solid #E02E22;
+				background-color: #E02E22;
+				width: 100%;
+				border-radius: 3px;
+			}
+			.mui-input-row .mui-btn~input{
+				width: 36%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">用户信息录入</h1>
+		</header>
+		<div class="mui-content">
+			<form class="mui-input-group" style="margin-top: 0;">
+				<div id="takePhotoContainer">
+					<div id="photoIconContainer" class="mui-content-padded" align="center" style="padding-top:50px">
+						<span id="photoIcon" class="take-photo-icon"></span>
+						<div align="center">人车合照</div>
+					</div>
+				</div>
+				<div id="userCarPicShow" align="center" style="padding-top: 20px; display: none;">
+					<img id="userCarPic" style="width: 40%;" alt="无法查看图片"/>
+				</div>
+				<div class="mui-input-row" style="margin-top: 30px;">
+					<label>车主职业</label>
+					<input id='occupation' type="text" class="mui-input-clear mui-input"  autocomplete="off" placeholder="请输入职业">
+				</div>
+				<div class="mui-input-row">
+					<label>购车形态</label>
+					<button id='purTypePicker' type="button" name="purTypePicker" class="mui-btn mui-icon mui-icon-arrowdown mui-right">请选择形态</button>
+				</div>
+				<div class="mui-input-row">
+					<label>原有车辆</label>
+					<button id='preCarBrandPicker' type="button" name="preCarBrandPicker" class="mui-btn mui-icon mui-icon-arrowdown mui-right">请选择品牌</button>
+					<input id='preCarProduct' type="text" class="mui-input-clear mui-input"  autocomplete="off" placeholder="请输入型号">
+				</div>
+				<div class="mui-input-row">
+					<label>认知途径</label>
+					<input id='knowChannal' type="text" class="mui-input-clear mui-input"  autocomplete="off" placeholder="请输入认知途径">
+				</div>
+				<div class="common-btn-padded" style="margin: 20px 30px;">
+					<input id="saveSurveyBtn" class="save-input-btn" type="button" name="getMessage" value="保 存">
+				</div>
+			</form>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script src="../../../js/jquery.js"></script>
+		<script src="../../../js/mui.picker.all.js" type="text/javascript"></script>
+		<script src="mmaa08_userCardSurvey.js"></script>
+	</body>
+</html>

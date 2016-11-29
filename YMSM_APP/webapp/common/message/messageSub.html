@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../../css/mui.min.css">
+		<link rel="stylesheet" href="../../../css/iconfont.css">
+		<link rel="stylesheet" href="../../../css/common.css">
+		<style>
+			.mui-table-view:before{
+				height: 0;
+			}
+			.mui-table-view:after{
+				height:0;
+			}
+			.mui-table-view-cell:after{
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<!--下拉刷新容器-->
+		<div id="messageRefresh" class="mui-content mui-scroll-wrapper">
+			<!--数据列表-->
+			<div id="listContain" class="mui-scroll">
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+		<script src="../../../js/common.js"></script>
+		<script src="messageSub.js"></script>
+	</body>
+</html>
